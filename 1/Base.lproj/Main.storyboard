@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9M-sc-7rb">
+                                <rect key="frame" x="67" y="174" width="240" height="318"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="k58-nu-Emm">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="318"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="318" id="aQj-kM-VXM"/>
+                                            <constraint firstAttribute="width" constant="240" id="dto-Xl-fT9"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="nJs-MZ-zyQ" appends="YES" id="dTd-Py-uvk"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="1JC-pg-3Ek">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="318"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="C7R-8l-CcF"/>
+                                            <constraint firstAttribute="height" constant="318" id="iTW-MH-Kiv"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="C4F-Ud-vRQ" appends="YES" id="riP-2L-vWt"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="1JC-pg-3Ek" firstAttribute="centerX" secondItem="c9M-sc-7rb" secondAttribute="centerX" id="EDk-aS-k0d"/>
+                                    <constraint firstItem="k58-nu-Emm" firstAttribute="centerX" secondItem="c9M-sc-7rb" secondAttribute="centerX" id="N8G-5o-iCj"/>
+                                    <constraint firstAttribute="width" constant="240" id="Rsf-LD-209"/>
+                                    <constraint firstItem="1JC-pg-3Ek" firstAttribute="centerY" secondItem="c9M-sc-7rb" secondAttribute="centerY" id="f8v-DY-Z20"/>
+                                    <constraint firstAttribute="height" constant="318" id="mpS-zF-Ozg"/>
+                                    <constraint firstItem="k58-nu-Emm" firstAttribute="centerY" secondItem="c9M-sc-7rb" secondAttribute="centerY" id="vDt-ax-hf4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c9M-sc-7rb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wij-BQ-v7M"/>
+                            <constraint firstItem="c9M-sc-7rb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wRl-ie-iGb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="oneImage" destination="1JC-pg-3Ek" id="lpN-72-HHg"/>
+                        <outlet property="oneTap" destination="C4F-Ud-vRQ" id="Fm6-x5-9l8"/>
+                        <outlet property="twoImage" destination="k58-nu-Emm" id="ETj-bR-IgA"/>
+                        <outlet property="twoTap" destination="nJs-MZ-zyQ" id="9JT-km-2cT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="C4F-Ud-vRQ"/>
+                <tapGestureRecognizer id="nJs-MZ-zyQ"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="100" height="150"/>
+        <image name="2" width="240" height="344"/>
+    </resources>
+</document>
